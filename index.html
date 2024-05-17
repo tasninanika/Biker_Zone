@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
       <!-- tailwind style -->
         <script>
               tailwind.config = {
@@ -31,11 +34,14 @@
         .font-poppins{
             font-family:"Poppins", sans-serif;
         }
+        .font-manrope{
+          font-family: Manrope;
+        }
     </style>
 
 </head>
 <body class="font-poppins">
-    <header class="md:container md:mx-auto">
+    <header class="md:container md:mx-auto lg:mt-10">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -50,7 +56,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl lg:text-4xl">Biker Zone</a>
+                  <a class="btn btn-ghost text-xl lg:text-4xl lg:ml-[-20px]">Biker Zone</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-base">
@@ -66,7 +72,7 @@
               </div>
         </nav>
         <!-- slider -->
-        <div class="carousel w-full lg:h-[550px] bg-slider-primary-bg">
+        <div class="carousel w-full lg:h-[550px] bg-slider-primary-bg lg:mt-14">
           <div id="slide1" class="carousel-item relative w-full">
             <div class="flex flex-col lg:flex-row  lg:p-24 p-4 gap-20">
               <div class="space-y-7 flex-1">
@@ -151,11 +157,7 @@
         </div>
     </header>
     <main class="md:container md:mx-auto">
-      <!-- feature -->
-      <section>
-
-      </section>
-      <!-- latest bike -->
+    <!-- latest bike -->
       <section class="my-24">
         <h3 class="text-5xl font-semibold text-center mb-12">Latest Bikes</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:ml-6 ml-5 gap-6 lg:gap-0 md:ml-2">
@@ -269,10 +271,10 @@
       </section>
       <!-- FAQ -->
       <section class="my-24 lg:mx-20">
-        <h3 class="text-5xl font-semibold text-center lg:mb-[-60px]">Frequently Asked <span class="text-bike-primary">Questions</span> </h3>
+        <h3 class="lg:text-5xl text-4xl font-semibold text-center lg:mb-[-60px]">Frequently Asked <span class="text-bike-primary">Questions</span> </h3>
         <div class="hero min-h-screen">
-          <div class="hero-content flex-col lg:flex-row lg:gap-24">
-            <img src="images/others/faq.png" class="max-w-sm rounded-lg" />
+          <div class="hero-content flex-col lg:flex-row lg:gap-24 mt-9 lg:mt-0">
+            <img src="images/others/faq.png" class="lg:max-w-sm w-3/4 rounded-lg" />
             <div>
               <!-- first qus -->
               <div class="collapse collapse-arrow">
@@ -320,7 +322,33 @@
       </section>
     </main>
     <footer>
-
+      <footer class="footer p-10 bg-black text-neutral-content">
+        <aside class="lg:ml-20">
+          <div class="flex gap-6 font-manrope">
+            <p>Download Now</p>
+            <p>License</p>
+          </div>
+          <div class="lg:flex lg:gap-6 font-manrope grid grid-cols-3 gap-3">
+            <p>About</p>
+            <p>Features</p>
+            <p>Pricing</p>
+            <p>Careers</p>
+            <p>Help</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="font-manrope">
+            <p>© 2020 bike. All rights reserved</p>
+          </div>
+        </aside> 
+      
+        <nav>
+          <h6 class="font-manrope">Get the App</h6> 
+          <div class="grid grid-cols-1 gap-4">
+            <a><img class="w-36" src="images/others/android.png" alt=""></a>
+            <a><img class="w-36" src="images/others/ios.png" alt=""></a>
+          </div>
+        </nav>
+      </footer>
     </footer>
 </body>
 </html>
